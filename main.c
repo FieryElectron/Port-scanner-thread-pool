@@ -58,7 +58,6 @@ int main()
 
     while (1)
     {
-        // usleep(10000);
         pthread_mutex_lock(&mut);
         printf("\rIn progress %.2f%% %d", (float)counter / 65535.0 * 100, counter);
         if (counter >= 65535)
